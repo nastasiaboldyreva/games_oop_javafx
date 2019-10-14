@@ -69,9 +69,31 @@ public class Logic {
     }
 
     public boolean isWin() {
-        int[][] table = this.convert();
+        /*int[][] table = this.convert();
         boolean result = false;
-        return result;
+        for (int row = 0; row < table.length; row++) {
+            for (int cell = 0; cell < table.length; cell++) {
+                char sign = table[row][cell];
+                int vert = 0;
+                int gor = 0;
+                System.out.print(sign);
+                for (int k = 0; k < table.length; k++) {
+                    if (table[row][cell] == 'X') {
+                        if (table[row][k] == 'X') {
+                            vert++;
+                        }
+                        if (table[k][cell] == 'X') {
+                            gor++;
+                        }
+                    }
+                    if ((vert == table.length) | (gor == table.length)) {
+                        result = true;
+                    }
+                }
+
+            }
+            System.out.println();
+        return result; **/
     }
 
     public int[][] convert() {
